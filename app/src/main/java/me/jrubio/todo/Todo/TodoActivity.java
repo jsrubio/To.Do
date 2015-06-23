@@ -17,7 +17,7 @@ import me.jrubio.todo.R;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -100,7 +100,7 @@ public class TodoActivity extends BaseActivity implements ITodoView {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_delete:
-                    getPresenter().delete();
+                getPresenter().delete();
                 return true;
             case R.id.action_discard:
                 getPresenter().discard();

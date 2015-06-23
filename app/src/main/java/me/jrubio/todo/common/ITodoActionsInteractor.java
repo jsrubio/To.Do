@@ -3,7 +3,7 @@ package me.jrubio.todo.common;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)

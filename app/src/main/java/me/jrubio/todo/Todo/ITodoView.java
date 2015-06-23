@@ -1,7 +1,7 @@
 package me.jrubio.todo.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -10,7 +10,7 @@ package me.jrubio.todo.Todo;
 public interface ITodoView {
 
     /**
-     * When a To.Do to edit is sent, update contents in the UI fields
+     * When To.Do to edit is sent, update contents in the UI fields
      *
      * @param title field
      * @param description field
@@ -19,14 +19,14 @@ public interface ITodoView {
     void updateFields(String title, String description, boolean completed);
 
     /**
-     * Updates the date of the edited field
+     * Updates the date of the Edited field
      *
      * @param date string
      */
     void updateEditedField(String date);
 
     /**
-     * Finish the view layer
+     * Finish view layer
      */
     void finishView();
 

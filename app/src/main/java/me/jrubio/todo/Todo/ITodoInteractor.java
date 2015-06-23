@@ -4,7 +4,7 @@ import me.jrubio.todo.common.ITodoActionsInteractor;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -13,7 +13,7 @@ import me.jrubio.todo.model.Todo;
 public interface ITodoInteractor extends ITodoActionsInteractor {
 
     /**
-     * Insert a new To.Do in the database
+     * Insert new To.Do in the database
      *
      * @param todo
      */

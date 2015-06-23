@@ -23,7 +23,7 @@ import me.jrubio.todo.Todo.TodoActivity;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -173,8 +173,7 @@ public class ListActivity extends BaseActivity implements IListView {
     }
 
     @Override
-    public void showItemDialog(final Todo todo) {
-        final CharSequence items[] = new CharSequence[] {getString(R.string.edit), getString(R.string.delete)};
+    public void showItemDialog(final Todo todo, final CharSequence items[]) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override

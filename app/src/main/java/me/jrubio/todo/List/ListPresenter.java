@@ -5,11 +5,12 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import me.jrubio.todo.R;
 import me.jrubio.todo.model.Todo;
 import me.jrubio.todo.model.TodoRepository;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -51,7 +52,11 @@ public class ListPresenter implements IListPresenter {
 
     @Override
     public void onLongClickTodoItem(Todo todo) {
-        view.showItemDialog(todo);
+        CharSequence items[] = new CharSequence[] {
+                context.getString(R.string.edit),
+                context.getString(R.string.delete)
+        };
+        view.showItemDialog(todo, items);
     }
 
     @Override

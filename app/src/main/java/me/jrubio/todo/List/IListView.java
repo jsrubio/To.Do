@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -14,26 +14,26 @@ import me.jrubio.todo.model.Todo;
 public interface IListView {
 
     /**
-     * Set To.Do's in the ListAdapter
+     * Set To.Dos in the Adapter
      *
      * @param todos
      */
     void setTodos(ArrayList<Todo> todos);
 
     /**
-     * Notify To.Do's data set has changed
+     * Notify To.Dos data set has changed
      */
     void notifyListDataSetChanged();
 
     /**
-     * Notify item removed from ListAdapter
+     * Notify item removed in Adapter
      *
      * @param position
      */
     void notifyListItemRemoved(int position);
 
     /**
-     * Notify item inserter from ListAdapter
+     * Notify item inserted in Adapter
      *
      * @param position
      */
@@ -44,7 +44,7 @@ public interface IListView {
      *
      * @param todo
      */
-    void showItemDialog(Todo todo);
+    void showItemDialog(Todo todo, CharSequence items[]);
 
     /**
      * Show TodoView to edit old To.Do

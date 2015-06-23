@@ -3,7 +3,7 @@ package me.jrubio.todo.List;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -12,7 +12,7 @@ import me.jrubio.todo.model.Todo;
 public interface IListPresenter {
 
     /**
-     * Refresh data in the view layer
+     * Refresh data in view layer
      */
     void refreshSession();
 
@@ -22,21 +22,21 @@ public interface IListPresenter {
     void onAddTodoButtonClick();
 
     /**
-     * Action when the user click to edit To.Do
+     * Action when the user click to edit on To.Do item
      *
      * @param todo
      */
     void onClickTodoItemToEdit(Todo todo);
 
     /**
-     * Action when the user long click To.Do
+     * Action when the user long click on To.Do item
      *
      * @param todo
      */
     void onLongClickTodoItem(Todo todo);
 
     /**
-     * Update To.Do completed field
+     * Update To.Do completed property
      *
      * @param todo
      * @param completed

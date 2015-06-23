@@ -3,7 +3,7 @@ package me.jrubio.todo.Todo;
 import me.jrubio.todo.model.Todo;
 
 /**
- * Example To.Do list app using MVP architecture.
+ * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
  *
  * @author Jose I. Rubio (@joseirs)
@@ -12,14 +12,14 @@ import me.jrubio.todo.model.Todo;
 public interface ITodoPresenter {
 
     /**
-     * The object To.Do is saved to edit
+     * To.Do to edit is saved
      *
      * @param todo
      */
     void setEditTodo(Todo todo);
 
     /**
-     * Saves a new To.Do or updated an old one
+     * Create new To.Do or update an old one
      *
      * @param title
      * @param description
