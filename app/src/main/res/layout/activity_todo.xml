@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.jrubio.todo.Todo.TodoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/todo_title"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Title"
+                android:layout_marginRight="15sp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/todo_description"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:hint="Description"
+                android:layout_marginRight="15dp"
+                android:background="@null" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completed"
+                android:id="@+id/completed"
+                android:checked="false"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/todo_edited"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:text="@string/edited"
+                android:textIsSelectable="false"
+                android:textColor="@color/primary_text_disabled_material_light"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

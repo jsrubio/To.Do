@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">To.Do</string>
+
+    <string name="action_about">About</string>
+    <string name="action_discard">Discard To.Do</string>
+    <string name="action_delete">Delete To.Do</string>
+    <string name="title_activity_todo">Add To.Do</string>
+    <string name="title_activity_todo_edit">Edit To.Do</string>
+    <string name="edited"><![CDATA[Edited: <b>"%1$s"</b>]]></string>
+    <string name="created"><![CDATA[Created: <b>"%1$s"</b>]]></string>
+    <string name="no_todo">No To.Do\'s, try adding a few! :)</string>
+    <string name="completed">Completed</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>
