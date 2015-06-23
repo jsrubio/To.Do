@@ -28,7 +28,7 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:hint="Title"
+                android:hint="@string/title"
                 android:layout_marginRight="15sp"
                 android:singleLine="true" />
 
@@ -39,7 +39,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="18sp"
-                android:hint="Description"
+                android:hint="@string/description"
                 android:layout_marginRight="15dp"
                 android:background="@null" />
 

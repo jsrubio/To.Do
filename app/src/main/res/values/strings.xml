@@ -12,4 +12,6 @@
     <string name="completed">Completed</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
 </resources>
