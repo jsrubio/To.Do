@@ -18,7 +18,7 @@ public class ParseDate {
 
     public static String parseDate(Long timestamp, String pattern) {
         SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.US);
-        Long now = (timestamp != null) ? timestamp : new Date().getTime();
+        Long now  = (timestamp != null) ? timestamp : new Date().getTime();
         Date date = new Date(now);
         return format.format(date);
     }

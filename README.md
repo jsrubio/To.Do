@@ -32,10 +32,6 @@ With the app, you can:
 - cardview-v7:22.2.0
 - shell-software:fab: 1.1.2
 
-<blockquote>
-The project uses <strong>support library v7</strong> but it is not necessary.
-</blockquote>
-
 [**Download the demo apk file**](https://play.google.com/store/apps/details?id=me.jrubio.todo)
 
 ## Contact
