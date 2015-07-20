@@ -29,7 +29,7 @@ With the app, you can:
 
 - appcompat-v7: 22.2.0
 - recyclerview-v7: 22.2.0
-- cardview-v7:22.2.0
+- cardview-v7: 22.2.0
 - shell-software:fab: 1.1.2
 
 [**Download the demo apk file**](https://play.google.com/store/apps/details?id=me.jrubio.todo)
