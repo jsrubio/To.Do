@@ -6,7 +6,7 @@ import android.widget.Toast;
 import java.util.Date;
 
 import me.jrubio.todo.common.ParseDate;
-import me.jrubio.todo.model.Todo;
+import me.jrubio.todo.model.Entity.Todo;
 import me.jrubio.todo.model.TodoRepository;
 
 /**
@@ -27,12 +27,6 @@ public class TodoPresenter implements ITodoPresenter {
     public TodoPresenter(ITodoView view, Context context) {
         this.view       = view;
         this.interactor = new TodoRepository(context.getContentResolver());
-        this.context    = context;
-    }
-
-    public TodoPresenter(ITodoView view, ITodoInteractor interactor, Context context) {
-        this.view       = view;
-        this.interactor = interactor;
         this.context    = context;
     }
 

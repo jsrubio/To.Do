@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import me.jrubio.todo.BaseActivity;
 import me.jrubio.todo.R;
 import me.jrubio.todo.Todo.TodoActivity;
-import me.jrubio.todo.model.Todo;
+import me.jrubio.todo.model.Entity.Todo;
 
 /**
  * Example To.Do list app using MVP pattern.

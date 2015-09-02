@@ -1,4 +1,4 @@
-package me.jrubio.todo.model;
+package me.jrubio.todo.model.Entity;
 
 import android.database.Cursor;
 import android.os.Parcel;

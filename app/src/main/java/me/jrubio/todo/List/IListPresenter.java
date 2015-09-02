@@ -1,6 +1,6 @@
 package me.jrubio.todo.List;
 
-import me.jrubio.todo.model.Todo;
+import me.jrubio.todo.model.Entity.Todo;
 
 /**
  * Example To.Do list app using MVP pattern.

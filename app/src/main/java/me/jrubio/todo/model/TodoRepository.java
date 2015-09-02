@@ -11,6 +11,7 @@ import java.util.Date;
 import me.jrubio.todo.List.IListInteractor;
 import me.jrubio.todo.Todo.ITodoInteractor;
 import me.jrubio.todo.model.ContentProvider.TodoContract;
+import me.jrubio.todo.model.Entity.Todo;
 
 /**
  * Example To.Do list app using MVP pattern.

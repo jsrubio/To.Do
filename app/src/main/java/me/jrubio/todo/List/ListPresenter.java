@@ -6,7 +6,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import me.jrubio.todo.R;
-import me.jrubio.todo.model.Todo;
+import me.jrubio.todo.model.Entity.Todo;
 import me.jrubio.todo.model.TodoRepository;
 
 /**
@@ -25,12 +25,6 @@ public class ListPresenter implements IListPresenter {
     public ListPresenter(IListView view, Context context) {
         this.view       = view;
         this.interactor = new TodoRepository(context.getContentResolver());
-        this.context    = context;
-    }
-
-    public ListPresenter(IListView view, IListInteractor interactor, Context context) {
-        this.view       = view;
-        this.interactor = interactor;
         this.context    = context;
     }
 
