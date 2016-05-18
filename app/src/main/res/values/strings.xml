@@ -1,11 +1,27 @@
 <resources>
+    <!-- Application name -->
     <string name="app_name">To.Do</string>
 
+    <!-- Activities titles -->
+    <string name="title_activity_todo">Add To.Do</string>
+    <string name="title_activity_todo_edit">Edit To.Do</string>
+    <string name="title_activity_about">About</string>
+
+    <!-- Actions -->
     <string name="action_about">About</string>
     <string name="action_discard">Discard To.Do</string>
     <string name="action_delete">Delete To.Do</string>
-    <string name="title_activity_todo">Add To.Do</string>
-    <string name="title_activity_todo_edit">Edit To.Do</string>
+
+    <!-- AboutLibraries -->
+    <string name="aboutLibraries_description_showIcon">true</string>
+    <string name="aboutLibraries_description_showVersion">true</string>
+    <string name="aboutLibraries_description_text"><![CDATA[
+    <b>This application is a demo to show principally the MVP pattern (Model-View-Presenter) usage on Android among other features.</b><br />
+    The source code is available on <a href="https://github.com/jsrubio/To.Do">Github</a><br />
+    Contact: <a href="https://jrubio.me">jrubio.me</a>
+    ]]></string>
+
+    <!-- General -->
     <string name="edited"><![CDATA[Edited: <b>"%1$s"</b>]]></string>
     <string name="created"><![CDATA[Created: <b>"%1$s"</b>]]></string>
     <string name="no_todo">No To.Do\'s, try adding a few! :)</string>

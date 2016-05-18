@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.mikepenz.aboutlibraries.Libs;
+import com.mikepenz.aboutlibraries.LibsBuilder;
+
 /**
  * Example To.Do list app using MVP pattern.
  * Using android-support-v7 to support old Android versions.
@@ -41,6 +44,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_about:
+                new LibsBuilder()
+                        .withFields(R.string.class.getFields())
+                        .withActivityTitle(getString(R.string.title_activity_about))
+                        .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
+                        .start(this);
                 return true;
         }
         return super.onOptionsItemSelected(item);

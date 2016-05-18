@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "me.jrubio.todo"
-        minSdkVersion 9
+        minSdkVersion 10
         targetSdkVersion 23
-        versionCode 2
-        versionName "1.1"
+        versionCode 4
+        versionName "1.3"
     }
     buildTypes {
         release {
@@ -21,8 +21,11 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.android.support:recyclerview-v7:23.0.0'
-    compile 'com.android.support:cardview-v7:23.0.0'
-    compile 'com.github.shell-software:fab:1.1.2'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile "com.android.support:design:23.4.0"
+    compile('com.mikepenz:aboutlibraries:5.6.6@aar') {
+        transitive = true
+    }
 }

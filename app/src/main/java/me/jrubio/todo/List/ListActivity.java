@@ -6,14 +6,14 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.RelativeLayout;
-
-import com.software.shell.fab.ActionButton;
 
 import java.util.ArrayList;
 
@@ -48,8 +48,8 @@ public class ListActivity extends BaseActivity implements IListView {
         return (RecyclerView) findViewById(R.id.todo_list);
     }
 
-    public ActionButton getFabButton() {
-        return (ActionButton) findViewById(R.id.fab_button);
+    public FloatingActionButton getFabButton() {
+        return (FloatingActionButton) findViewById(R.id.fab_button);
     }
 
     @Override
@@ -115,6 +115,12 @@ public class ListActivity extends BaseActivity implements IListView {
 
     private ItemTouchHelper.SimpleCallback cardSwipeCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
         @Override
+        public int getSwipeDirs(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+            if (viewHolder instanceof ListAdapter.NoTodoViewHolder) return 0;
+            return super.getSwipeDirs(recyclerView, viewHolder);
+        }
+
+        @Override
         public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
             listAdapter.notifyItemMoved(viewHolder.getAdapterPosition(), target.getAdapterPosition());
             return true;
@@ -134,11 +140,11 @@ public class ListActivity extends BaseActivity implements IListView {
                                 int actionState, boolean isCurrentlyActive) {
             ListAdapter.TodoViewHolder vh = (ListAdapter.TodoViewHolder) viewHolder;
             if (vh.getAdapterPosition() != -1) {
+                Todo todo                     = listAdapter.getTodos().get(vh.getAdapterPosition());
                 RelativeLayout cardBackground = vh.cardBackground;
-                Paint backgroundColor = new Paint();
-                Todo todo = listAdapter.getTodos().get(vh.getAdapterPosition());
+                Paint backgroundColor         = new Paint();
                 int colorCardBackgroundActive = (todo.isCompleted()) ? R.color.noArchive : R.color.colorArchive;
-                backgroundColor.setColor(getResources().getColor(colorCardBackgroundActive));
+                backgroundColor.setColor(ContextCompat.getColor(getApplicationContext(), colorCardBackgroundActive));
                 c.drawRect(cardBackground.getLeft(), cardBackground.getTop(), cardBackground.getRight(), cardBackground.getBottom() - 5, backgroundColor);
             }
             super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);

@@ -64,7 +64,7 @@ public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
         switch (holder.getItemViewType()) {
             case TYPE_NO_TODO:
                 break;
@@ -83,13 +83,13 @@ public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 todoViewHolder.card.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        todoIOnClickToEditListener.onClickToEditListener(todo, position);
+                        todoIOnClickToEditListener.onClickToEditListener(todo, holder.getAdapterPosition());
                     }
                 });
                 todoViewHolder.card.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        todoIOnLongClickListener.onLongClickListener(todo, position);
+                        todoIOnLongClickListener.onLongClickListener(todo, holder.getAdapterPosition());
                         return true;
                     }
                 });

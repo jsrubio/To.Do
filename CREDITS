@@ -1,7 +1,13 @@
-Floating Action Button (https://github.com/shell-software/fab)
-------------------------
+Material Design Icons (https://github.com/google/material-design-icons)
+-----------------------------------------------------------------------
 
-Copyright 2015 Shell Software Inc.
+All icons are released under an Attribution-ShareAlike 4.0 International
+(http://creativecommons.org/licenses/by-sa/4.0/) license.
+
+AboutLibraries (https://github.com/mikepenz/AboutLibraries)
+-----------------------------------------------------------------------
+
+Copyright 2016 Mike Penz
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,9 +20,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-Material Design Icons (https://github.com/google/material-design-icons)
------------------------------------------------------------------------
-
-All icons are released under an Attribution-ShareAlike 4.0 International
-(http://creativecommons.org/licenses/by-sa/4.0/) license.

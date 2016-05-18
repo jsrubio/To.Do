@@ -1,3 +1,5 @@
+<img width="70" src="https://raw.githubusercontent.com/jsrubio/To.Do/master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" alt="To.Do">
+
 To.Do, Android MVP example
 ==========
 
@@ -23,14 +25,16 @@ With the app, you can:
 - [Content Providers](http://developer.android.com/guide/topics/providers/content-providers.html)
 - [SQLiteOpenHelper](http://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html)
 - [Toolbar](https://developer.android.com/reference/android/widget/Toolbar.html)
-- [Floating Action Button](https://github.com/shell-software/fab)
+- [Floating Action Button](https://developer.android.com/reference/android/support/design/widget/FloatingActionButton.html)
+- [AboutLibraries](https://github.com/mikepenz/AboutLibraries)
 
 ## Dependencies
 
-- appcompat-v7: 23.0.0
-- recyclerview-v7: 23.0.0
-- cardview-v7: 23.0.0
-- shell-software: fab:1.1.2
+- appcompat-v7:23.4.0
+- recyclerview-v7:23.4.0
+- cardview-v7:23.4.0
+- design:23.4.0
+- mikepenz:aboutlibraries:5.6.6@aar
 
 [**Download the demo apk file**](https://play.google.com/store/apps/details?id=me.jrubio.todo)
 
